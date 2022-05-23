@@ -8,12 +8,12 @@ const Task = (props) => {
     props.delete(props.todo.Id);
     // console.log(props.key)
   };
-
+  
   return (
     <li data-cy="task" className={styles.task}>
       <input type="checkbox" data-cy="task-checkbox" />
       <div data-cy="task-text">{props.todo.Value}</div>
-      <Counter />
+      <Counter  />
       {/* Counter here */}
       <button data-cy="task-remove-button" onClick={deleteTask}>
         x

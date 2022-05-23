@@ -11,7 +11,9 @@ const Counter = () => {
       <button
         data-cy="task-counter-increment-button"
         onClick={() => {
-          setCount(count - 1);
+          if (count > 0) {
+            setCount(count - 1);
+          }
         }}
       >
         -
